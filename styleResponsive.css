@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: seashell;
+    font-size: 22px;
+    font-family: Helvetica;
+    opacity: 0.9;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 69px;
+    justify-content: space-between;
+    background-color: black;
+    border-bottom: 1px solid seashell;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+    margin: 10px;
+}
+
+nav {
+    width: 60%;
+}
+
+nav ul {
+    width:100%;
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    width: 33%;
+    text-align: center;
+    padding-top: 2.5%;
+}
+
+nav a {
+    color: seashell;
+}
+
+#mission {
+    width: 90%;
+    height: 700px;
+    background-image: url(Images/background.png);
+    background-size: cover;
+    position: relative;
+    top: 69px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+#missionText {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+}
+
+#missionText h2 {
+    padding-bottom: 1.5%;
+}
+
+#featured {
+    position: relative;
+    top: 69px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+
+#featured h2, h4 {
+    width: 100%;
+    text-align: center;
+    padding: 1.5%;
+}
+
+#featured figure {
+    padding: 1.5% 0.7%;
+    text-align: center;
+}
+
+figcaption {
+    padding: 10px;
+}
+
+#featured img {
+    width: 300px;
+    height: 200px;
+}
+
+#locations {
+    position: relative;
+    top: 69px;
+    width: 90%;
+    padding: 3%;
+    margin: 0 auto;
+    background-image: url(Images/locations.png);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#locations h2 {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+.place {
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 2.5%;
+}
+
+.place h3, p {
+    padding: 5%;
+}
+
+#contact {
+    position: relative;
+    top: 69px;
+    height: 200px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#copyright {
+    position: relative;
+    top: 69px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 950px){
+    
+    .place {
+        width: 200px;
+        height: 200px;
+    }
+
+    .place p {
+        font-size: 15px;
+        padding: 3%;
+    }
+
+    place h3 {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+}
